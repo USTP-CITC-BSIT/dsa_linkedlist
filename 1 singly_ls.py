@@ -10,8 +10,9 @@ class SLinkedList:
    def listprint(self):
       printval = self.headval
       while printval is not None:
-         print (printval.dataval)
+         print (printval.dataval, end=' ')
          printval = printval.nextval
+         
 
 list = SLinkedList()
 list.headval = Node("Mon") # type: ignore

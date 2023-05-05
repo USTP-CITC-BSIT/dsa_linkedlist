@@ -47,10 +47,15 @@ class DoublyLinkedList:
 
 # Driver code
 if __name__ == '__main__':
-	L = DoublyLinkedList()
-	L.append(1)
-	L.append(2)
-	L.append(3)
-	L.append(4)
-	L.display('Left_To_Right')
-	L.display('Right_To_Left')
+	l = DoublyLinkedList()
+	l.headval = Node(1)
+	e2 = Node(2)
+	e3 = Node(3)
+	e4 = Node(4)
+	
+	l.head.next = e2
+	e2.next = e3
+	e3.next = e4
+
+	l.display('Left_To_Right')
+	l.display('Right_To_Left')
