@@ -28,6 +28,9 @@ list.headval.nextval = e2 # type: ignore
 e2.nextval = e3 # type: ignore
 
 # Link third Node to fourth node
-e3.nextval = e5 # type: ignore
+e3.nextval = e4 # type: ignore
+
+# Link fourth Node to fifth node
+e4.nextval = e5 # type: ignore
 
 list.listprint()
